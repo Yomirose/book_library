@@ -1,0 +1,129 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+/* Container for forms */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form fields */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Links */
+a {
+  margin-top: 10px;
+  display: inline-block;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 32px 24px;
+    max-width: 720px;
+    width: calc(100% - 48px);
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.15;
+  }
+
+  p, label {
+    font-size: 1.05rem;
+  }
+
+  input, button, a {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  input, button, a {
+    font-size: 1rem;
+  }
+}
