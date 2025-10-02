@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete book</title>
+</head>
+<body>
+    <h2>Are you sure you want to delete this book?</h2>
+    <p><strong>{{ book_to_delete.title }}</strong> by {{ book_to_delete.author }}</p>
+    <p>Rating: {{ book_to_delete.rating }}</p>
+
+    <form method="POST">
+        <button type="submit">Confirm Delete</button>
+    </form>
+    <a href="{{ url_for('home') }}">Cancel</a>
+</body>
+</html>

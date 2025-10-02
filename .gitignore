@@ -1,0 +1,20 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+*.log
+
+# Ignore IDE settings
+.idea/
+inspectionProfiles/
+
+
+# Ignore test data
+data/test_data.json
