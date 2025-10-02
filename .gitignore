@@ -18,3 +18,10 @@ inspectionProfiles/
 
 # Ignore test data
 data/test_data.json
+
+# macOS system file
+.DS_Store
+
+# Flask instance folder
+instance/
+
